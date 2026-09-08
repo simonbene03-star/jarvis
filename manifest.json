@@ -1,0 +1,3 @@
+{
+"name":"JARVIS","short_name":"JARVIS","start_url":"./","display":"standalone","background_color":"#030609","theme_color":"#030609","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#05080b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<title>JARVIS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scan"></div>
+<header>
+  <div>
+    <div class="brand">JARVIS</div>
+    <div class="online"><span></span> ONLINE</div>
+  </div>
+  <button id="power" class="icon">⏻</button>
+</header>
+
+<main>
+<section class="core-card">
+  <div class="rings">
+    <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+    <div class="core">◆</div>
+  </div>
+  <div class="core-label">JARVIS CORE</div>
+  <div class="status" id="status">SYSTÉM PŘIPRAVEN</div>
+</section>
+
+<section class="grid">
+  <div class="tile"><b>🧠</b><span>JARVIS</span><strong id="jarvisState">Aktivní</strong></div>
+  <div class="tile"><b>🎙️</b><span>Mikrofon</span><strong id="micState">Aktivní</strong></div>
+  <div class="tile"><b>📶</b><span>Síť</span><strong>Připojeno</strong></div>
+  <div class="tile"><b>🔊</b><span>Hlasitost</span><strong id="volText">62 %</strong></div>
+</section>
+
+<section class="command">
+  <label>PŘÍKAZ JARVIS</label>
+  <div class="command-row">
+    <input id="command" placeholder="Např. „Pusť něco klidného“">
+    <button id="send">↑</button>
+  </div>
+  <div class="last" id="last">Poslední příkaz: —</div>
+</section>
+
+<section>
+<h2>Rychlé ovládání</h2>
+<div class="quick">
+<button data-tab="music">♫ Hudba</button>
+<button data-tab="calendar">▣ Kalendář</button>
+<button data-tab="reminders">☑ Úkoly</button>
+</div>
+</section>
+
+<section id="panel" class="panel">
+  <h2 id="panelTitle">JARVIS</h2>
+  <p id="panelText">Vyber jednu z funkcí.</p>
+</section>
+</main>
+
+<nav>
+<button data-tab="home" class="active">⌂<small>Přehled</small></button>
+<button data-tab="music">♫<small>Hudba</small></button>
+<button data-tab="calendar">▣<small>Kalendář</small></button>
+<button data-tab="reminders">☑<small>Úkoly</small></button>
+<button data-tab="memory">◈<small>Paměť</small></button>
+<button data-tab="settings">⚙<small>Nastavení</small></button>
+</nav>
+<script src="app.js"></script>
+</body>
+</html>
